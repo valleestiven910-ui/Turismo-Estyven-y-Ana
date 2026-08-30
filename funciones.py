@@ -39,7 +39,7 @@ def buscar_por_cliente(cliente_buscar):
 def calcular_ingreso_total():
     """4. Calcula la suma total de las reservas."""
     total = sum(r['precio'] for r in reservas)
-    print(f"\nTotal ingresos: C${total}")
+    print(f"\n Total ingresos: C${total}")
     return total
 
 def eliminar_reserva(id_eliminar):
@@ -49,4 +49,4 @@ def eliminar_reserva(id_eliminar):
             reservas.remove(r)
             print(f"\nReserva {id_eliminar} eliminada correctamente.")
             return
-    print(f"\nNo se encontró la reserva con ID: {id_eliminar}")
+    print(f"\n No se encontró la reserva con ID: {id_eliminar}")
